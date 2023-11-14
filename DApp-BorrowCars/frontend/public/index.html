@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Application</title>
+    
+
+</head>
+<body>
+    <h1>Car Rental Application</h1>
+    
+    <!-- 显示用户拥有的汽车列表 -->
+    <h2>Your Cars:</h2>
+    <ul id="ownedCars"></ul>
+
+    <!-- 显示可租借的汽车列表 -->
+    <h2>Available Cars:</h2>
+    <ul id="availableCars"></ul>
+
+    <!-- 租借汽车表单 -->
+    <h2>Rent a Car:</h2>
+    <form id="rentCarForm">
+        <label for="carId">Car ID:</label>
+        <input type="number" id="carId" required><br>
+        <label for="borrowDuration">Borrow Duration (in seconds):</label>
+        <input type="number" id="borrowDuration" required><br>
+        <button type="submit">Rent</button>
+    </form>
+
+    <h2>Return a Car:</h2>
+    <form id="returnCarForm">
+        <label for="returnCarId">Car ID:</label>
+        <input type="number" id="returnCarId" required><br>
+        <button type="submit">Return</button>
+    </form>
+
+   
+</body>
+</html>
